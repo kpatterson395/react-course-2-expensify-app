@@ -141,7 +141,7 @@ test('should add expense with defaults to database and store', (done) => {
 			expect(snapshot.val()).toEqual(expenseData);
 			done();
 		
-	});
+	});               
 });
 
 test('should set up set expense action object with data', () => {
@@ -149,8 +149,8 @@ test('should set up set expense action object with data', () => {
   expect(action).toEqual({
     type: 'SET_EXPENSES',
     expenses
-  })
-})
+  });
+});
 
 test('should fetch the expenses from firebase', (done) => {
   const store = createMockStore(defaultAuthState);
